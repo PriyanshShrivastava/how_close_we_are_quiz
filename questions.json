@@ -1,0 +1,34 @@
+[
+    {
+      "question": "What is my favourite color?\na. Blue \nb. Black\nc. Purple\nd. Orange\n\nType your answer here (option(a,b,c,d) or option Name) :    ",
+      "answer": ["b", "Black"]
+    },
+    {
+      "question": "What is my favourite sport?\na. Criceket \nb. Football\nc. Basketball  \nd. Swimming\n\n Type your answer here (option(a,b,c,d) or option Name) :",
+      "answer": ["c", "Basketball"]
+    },
+    {
+      "question": "How many sister/s does I have??\na. 2 \nb. 1 \nc. 3 \nd. None\n\nType your answer here (option(a,b,c,d) or option Name) : ",
+  
+     "answer": ["b", "1"]
+    },
+    {
+      "question":"Which companie's smartphone do I use?\na. Apple \nb. Xioami \nc. Samsung \nd. Moto\n\n Type your answer here (option(a,b,c,d) or option Name) :",
+      "answer": ["b", "Xioami"]
+    },
+    {
+      "question":"Where is my hometown??\na. Rajnandgaon \nb. Bhilai \nc. Raipur  \nd. Bilaspur \n\nType your answer here (option(a,b,c,d) or option Name) :  ",
+      "answer": ["a", "Rajnandgaon"]
+    },
+  
+    {
+      "question":"Which company do I work for??\na. Infosys \nb. TCS\nc. Cognizant  \nd. Wipro \n\nType your answer here (option(a,b,c,d) or option Name) :  ",
+      "answer": ["c", "Cognizant"]
+    },
+  
+    {
+      "question":"Am I funny?\na. Yes \nb. Of course, the Funniest \nc. b \nd. a \n\nType your answer here (option(a,b,c,d) or option Name) :  ",
+      "answer": ["c", "b","c","d"]
+    }
+]
+  
