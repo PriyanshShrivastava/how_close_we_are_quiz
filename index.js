@@ -25,14 +25,17 @@ console.log(
   )
 );
 
-let getyearsKnown = function(){
-    const yearKnown = Number(readlineSync.question("For how long do you know Priyansh? (in years): "));
 
+
+let getyearsKnown = function(){
+    console.log();
+    const yearKnown = Number(readlineSync.question("For how long do you know Priyansh? (in years): "));
+    console.log();
     if(yearKnown>=2){
         console.log("Bro! You have to at-least score 70% otherwise you are GOOONEEE 😰 (No Pressure)")    
     }else{
         console.log("You are yet to know him more in order to answer these questions : ")
-        let continueQuest = readlineSync.question("Do you wanna continue? :").toLowerCase;
+        let continueQuest = readlineSync.question("Do you wanna continue? :").toLowerCase();
 
         if(continueQuest == 'y' || continueQuest == 'yes'){
             console.log("Fine then! Here are the rules : - ")
@@ -41,21 +44,23 @@ let getyearsKnown = function(){
         }
     }
 }
+getyearsKnown();
 console.log();
+console.log(("      Rules of the game!!"));
+console.log(grey("------------------------------------------"));
 console.log("     1. Every right answer gets a point.");
 console.log("     2. For Every wrong answer one point will get reduced");
 
 let score = 0;
 
 function welcomeScreen() {
+    console.log();
   console.log("Here we begin");
   console.log("--------------------------");
+
 }
-console.log();
-
-getyearsKnown();
-
 setTimeout(welcomeScreen, 2000);
+console.log();
 
 function showScore(score) {
   console.log(grey.bold("Current Score :", score));
@@ -79,6 +84,8 @@ function play(questions) {
       showScore(score);
     }
   }
+
+
   console.log();
   console.log("--------------------------------");
   
@@ -93,6 +100,6 @@ function play(questions) {
     console.log(bold("Than you for playing! Do visit again"));
   }
 }
-setTimeout(play, 4000, quesJson);
 
+setTimeout(play, 4000, quesJson);
 

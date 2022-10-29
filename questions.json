@@ -28,7 +28,7 @@
   
     {
       "question":"Am I funny?\na. Yes \nb. Of course, the Funniest \nc. b \nd. a \n\nType your answer here (option(a,b,c,d) or option Name) :  ",
-      "answer": ["c", "b","c","d"]
+      "answer": ["a", "b","c","d"]
     }
 ]
   
