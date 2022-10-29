@@ -1,12 +1,12 @@
 import chalk from "chalk";
 import readlineSync from "readline-sync";
 const welcome = chalk.green;
-const blue = chalk.blue;
 const bold = chalk.bold;
 const white = chalk.white;
 const bgColYellow = chalk.bgYellow;
 const red = chalk.red;
 const grey = chalk.grey;
+const cyan =  chalk.cyan;
 
 import { createRequire } from "module";
 import { read } from "fs";
@@ -90,15 +90,16 @@ function play(questions) {
   console.log("--------------------------------");
   
   console.log(welcome.bold("\t\tYour Final score is : ", score));
-  
-  let custAgainQuest = readlineSync.question("Do you want to play the game again?  ");
+  console.log();
 
-  
-  if(custAgainQuest == 'y' || custAgainQuest =='yes'){
-    play(quesJson);
+  if(score >=4){
+    console.log(cyan("Yayy!! Congratulations, you passed the quiz."))
+    console.log();
   }else{
-    console.log(bold("Than you for playing! Do visit again"));
+    console.log(red("You failed, that's sad :( "));
+    console.log();
   }
+  console.log(bold("Thank you for playing! Do visit again"));
 }
 
 setTimeout(play, 4000, quesJson);
